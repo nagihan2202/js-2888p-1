@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 50px;
+}
+
+.user-cards {
+  display: grid; /* Grid düzeni kullanıyoruz */
+  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* Hover efekti için geçiş */
+  text-align: left; /* Metni ortala */
+  display: flex; /* Flex düzeni kullan */
+  flex-direction: column; /* Dikey yönde hizala */
+  min-height: 350px; /* Kart yüksekliğini sabitle */
+  max-width: 440px; /* Kart genişliğini sabitle */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover efekti */
+}
+
+.profile-image {
+  width: 100px; /* Resim genişliği */
+  height: auto; /* Resim yüksekliği */
+  border: 1px solid #f0f0f0; /* Resim kenarlık rengi */
+  border-radius: 50%; /* Resim kenarlık yarıçapı */
+}
+
+.card-section {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0; /* Bölümler arasında ayırıcı */
+  padding-bottom: 10px;
+  width: 100%; /* Bölüm genişliğini kartın tamamına yay */
+}
+
+.card-section:last-child {
+  border-bottom: none; /* Son bölümde ayırıcıyı kaldır */
+}
+
+.card-section h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #343a40; /* Başlık rengi */
+  
+}
+
+.card-section p {
+  margin: 5px 0;
+  color: #6c757d; /* Metin rengi */
+}
+
+.card-section i {
+  color: #007bff; /* İkon rengi */
+  margin-right: 8px; /* İkon ile metin arasında boşluk */
+}
