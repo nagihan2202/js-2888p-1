@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #e9ecef;
@@ -7,9 +7,9 @@ body {
 }
 
 .user-cards {
-  display: grid; /* Grid düzeni kullanıyoruz */
-  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
-  gap: 20px; /* Kartlar arasındaki boşluk */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
 }
 
 .card {
@@ -17,49 +17,49 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s; /* Hover efekti için geçiş */
-  text-align: left; /* Metni ortala */
-  display: flex; /* Flex düzeni kullan */
-  flex-direction: column; /* Dikey yönde hizala */
-  min-height: 350px; /* Kart yüksekliğini sabitle */
-  max-width: 440px; /* Kart genişliğini sabitle */
+  transition: transform 0.2s; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column;
+  min-height: 350px; 
+  max-width: 440px; 
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Hover efekti */
+  transform: translateY(-5px); 
 }
 
 .profile-image {
-  width: 100px; /* Resim genişliği */
-  height: auto; /* Resim yüksekliği */
-  border: 1px solid #f0f0f0; /* Resim kenarlık rengi */
-  border-radius: 50%; /* Resim kenarlık yarıçapı */
+  width: 100px; 
+  height: auto; 
+  border: 1px solid #f0f0f0; 
+  border-radius: 50%; 
 }
 
 .card-section {
   margin-bottom: 15px;
-  border-bottom: 1px solid #f0f0f0; /* Bölümler arasında ayırıcı */
+  border-bottom: 1px solid #f0f0f0; 
   padding-bottom: 10px;
-  width: 100%; /* Bölüm genişliğini kartın tamamına yay */
+  width: 100%; 
 }
 
 .card-section:last-child {
-  border-bottom: none; /* Son bölümde ayırıcıyı kaldır */
+  border-bottom: none;
 }
 
 .card-section h4 {
   margin: 0;
   font-size: 1.2em;
-  color: #343a40; /* Başlık rengi */
+  color: #343a40; 
   
 }
 
 .card-section p {
   margin: 5px 0;
-  color: #6c757d; /* Metin rengi */
+  color: #6c757d; 
 }
 
 .card-section i {
-  color: #007bff; /* İkon rengi */
-  margin-right: 8px; /* İkon ile metin arasında boşluk */
+  color: #007bff; 
+  margin-right: 8px; 
 }
